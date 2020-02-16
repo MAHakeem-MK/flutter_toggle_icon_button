@@ -1,8 +1,8 @@
 name: toggle_icon_button
-description: A new Flutter package project.
+description: A icon button widget which toggle between given two icons on click.
 version: 0.0.1
-author:
-homepage:
+author: Muhammed Abdul Hakeem MK
+homepage: 
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
