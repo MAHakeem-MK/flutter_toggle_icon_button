@@ -1,14 +1,30 @@
 # toggle_icon_button
 
-A new Flutter package project.
+An Icon button which can toggle between two given icons.
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Add dependency in your pubspec.yaml file as given below:-
+```
+dependencies:
+  flutter:
+    sdk: flutter
+  toggle_icon_button:
+    git:
+      url: https://github.com/MAHakeem-MK/flutter_toggle_icon_button.git
+```    
+ Then,import to your page by :-
+``` 
+ import 'package:toggle_icon_button/toggle_icon_button.dart';
+``` 
+ you can use this button as:-
+``` 
+ ToggleIconButton(
+          icon1: Icons.wb_sunny,
+          icon2: Icons.cloud,
+          backgroundColor: Colors.red,
+          onPressed: () {
+            print("You've clicked!");
+          },
+        ),
+```
