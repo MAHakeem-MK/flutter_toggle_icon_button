@@ -41,6 +41,7 @@ class _HomePageState extends State<HomePage> {
         child: ToggleIconButton(
           icon1: Icons.wb_sunny,
           icon2: Icons.cloud,
+          backgroundColor: Colors.red,
           onPressed: () {
             print("You've clicked!");
           },

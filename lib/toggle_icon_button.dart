@@ -7,10 +7,12 @@ class ToggleIconButton extends StatefulWidget {
   final IconData icon2;
   final Function onPressed;
   final TextDirection textDirection;
+  final Color backgroundColor;
   ToggleIconButton(
       {@required IconData this.icon1,
       @required IconData this.icon2,
       TextDirection this.textDirection = TextDirection.ltr,
+      Color this.backgroundColor,
       @required this.onPressed});
   _ToggleIconButtonState createState() => _ToggleIconButtonState();
 }
@@ -27,6 +29,7 @@ class _ToggleIconButtonState extends State<ToggleIconButton> {
   Widget build(BuildContext context) {
     return Directionality(
       child: Material(
+          color: widget.backgroundColor??Theme.of(context).primaryColor,
           child: IconButton(icon: Icon(_currentIcon), onPressed: toggle)),
       textDirection: widget.textDirection,
     );
