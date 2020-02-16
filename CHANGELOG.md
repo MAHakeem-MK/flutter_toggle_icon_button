@@ -1,3 +1,7 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - 16 Feb 2020.
 
-* TODO: Describe initial release.
+Initial release of Toggle icon button.
+
+Features includes:-
+1 - Toggling between two icons
+2 - Background color customization support.
